@@ -54,7 +54,7 @@ I verified the Wazuh Manager's global configuration (`ossec.conf`) had the `<vul
 **Analysis:**
 The Wazuh agent successfully inventoried the software baseline and cross-referenced it with the threat intelligence feed. The SIEM generated over 1,500 vulnerability alerts for the legacy application, categorizing 319 of them as Critical severity based on CVSS scoring.
 
-images/09-vulnerability-scanner.png
+![alt text](images/09-vulnerability-scanner.png)
 
 **SOC Analyst Takeaway:**
 Proactive vulnerability management allows the SOC to identify and remediate attack vectors before they are actively exploited. Relying on severity scores allows for efficient triage and patch prioritization for the IT infrastructure team.
@@ -70,7 +70,7 @@ I modified the manager's global configuration (`ossec.conf`) to whitelist intern
 **Analysis:**
 The Wazuh agent successfully parsed multiple Windows Security Event logs (Event ID 4625) detailing authentication failures. Upon crossing the threshold, the SIEM triggered Rule 60115 (Account Locked Out) and successfully executed the automated active response script, dropping the attacker's network traffic at the Windows Defender Firewall layer.
 
-images/10-brute-force-detected.png
+![alt text](images/10-brute-force-detected.png)
 
 **SOC Analyst Takeaway:**
 Active response reduces mean-time-to-respond (MTTR) from hours to milliseconds. However, proper network whitelisting is critical to prevent automated remediation from causing self-inflicted Denial of Service (DoS) attacks against legitimate internal business units.
