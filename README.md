@@ -1,5 +1,7 @@
 ## Wazuh SIEM Home Lab Deployment
 
+**Executive Summary:** Engineered and deployed a production-grade Wazuh Security Information and Event Management (SIEM) environment to ingest, parse, and analyze security telemetry. This infrastructure established baseline capabilities for real-time threat hunting, endpoint log aggregation, and automated alert generation across monitored operating systems.
+
 **Objective:** Engineered an enterprise-grade SIEM environment from scratch to detect, monitor, and analyze live security threats across a virtualized network.
 
 ### Phase 1: Infrastructure Provisioning
