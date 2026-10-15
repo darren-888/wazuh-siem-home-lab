@@ -16,11 +16,12 @@
 *   Cleared a 99% full root partition crisis by pruning orphaned Docker image layers to restore database write capabilities.
 *   Engineered a persistent static IP via Netplan to ensure SIEM database connection stability across hypervisor reboots
 ![alt text](images/05-configured-static-ip-address.png)
+
 ### Phase 3: Endpoint Telemetry Integration
 *   Successfully deployed the Wazuh Windows Agent via PowerShell and routed telemetry across the local virtual network.
 ![alt text](images/04-wazuh-dashboard.png)
 
-## Phase 4: Attack Simulation & Threat Hunting (Persistence & Privilege Escalation)
+### Phase 4: Attack Simulation & Threat Hunting (Persistence & Privilege Escalation)
 
 **Objective:**
 Simulate an adversarial persistence technique and verify that the Wazuh SIEM successfully captures, parses, and maps the telemetry to the MITRE ATT&CK framework.
@@ -45,7 +46,7 @@ The Wazuh Agent successfully intercepted the internal Windows Security logs and 
 **SOC Analyst Takeaway:**
 Monitoring raw Windows Event Logs provides granular visibility into adversarial behavior. By investigating the JSON payload, I was able to identify not just the attack signature, but the exact threat actor origin (subject user) and the targeted system entity.
 
-## Phase 5: Vulnerability Management (Proactive Defense)
+### Phase 5: Vulnerability Management (Proactive Defense)
 
 **Objective:**
 Configure the Wazuh Vulnerability Detection engine to proactively scan the Windows endpoint for outdated, unpatched, and vulnerable software.
